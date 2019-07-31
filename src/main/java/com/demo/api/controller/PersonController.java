@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class PersonController {
 
@@ -18,7 +20,7 @@ public class PersonController {
     }
 
     @GetMapping("/people")
-    public ResponseEntity<?> findAllPersons() {
+    public ResponseEntity<List> findAllPersons() {
         return new ResponseEntity<>(personService.findAllPeople(), HttpStatus.OK);
     }
 
