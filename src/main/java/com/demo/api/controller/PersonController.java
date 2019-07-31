@@ -15,7 +15,7 @@ public class PersonController {
     }
 
     public Object findAllPersons() {
-        return null;
+        return 1;
     }
 
 }
