@@ -33,4 +33,9 @@ public class PersonServiceTest {
     public void testFindAllPeople() {
         assertNotNull(personService.findAllPeople());
     }
+
+    @Test
+    public void testTeturnTrue() {
+        assertTrue(personService.returnTrue());
+    }
 }
