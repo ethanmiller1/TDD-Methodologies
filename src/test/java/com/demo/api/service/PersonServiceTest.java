@@ -35,7 +35,12 @@ public class PersonServiceTest {
     }
 
     @Test
-    public void testTeturnTrue() {
+    public void testReturnTrue() {
         assertTrue(personService.returnTrue());
+    }
+
+    @Test
+    public void testReturnFalse() {
+        assertFalse(personService.returnTrue());
     }
 }
